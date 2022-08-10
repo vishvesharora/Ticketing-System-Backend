@@ -14,7 +14,7 @@ https://vishveshticket.herokuapp.com/admin
 There can be basically two types of user/role - admin or employee
 
 ```http
-  POST /users/new
+  POST https://vishveshticket.herokuapp.com/users/new
 ```
 
 | Body|  Description                       |
@@ -30,7 +30,7 @@ It return a Auth Token which will required in all other endpoints.
 Tickets can only be created by admin.
 
 ```http
-  POST /tickets/new
+  POST https://vishveshticket.herokuapp.com/tickets/new
 ```
 
 
@@ -48,13 +48,13 @@ It returns the id of the ticket created.
 ### Get all Tickets
 
 ```http
-  GET /tickets/all
+  GET https://vishveshticket.herokuapp.com/tickets/all
 ```
 
 ### Query Tickets
 
 ```http
-  GET /tickets/[param]
+  GET https://vishveshticket.herokuapp.com/tickets/[param]
 ```
 
 Query Parameters
@@ -68,7 +68,7 @@ Query Parameters
 Tickets can only be closed by admin or to whom the ticket is assigned.
 
 ```http
-  POST /tickets/markAsClosed
+  POST https://vishveshticket.herokuapp.com/tickets/markAsClosed
 ```
 
 | Body|  Description                       |
@@ -80,7 +80,7 @@ Tickets can only be deleted by admin.
 
 
 ```http
-  POST /tickets/delete
+  POST https://vishveshticket.herokuapp.com/tickets/delete
 ```
 
 | Body|  Description                       |
